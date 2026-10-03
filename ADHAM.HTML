@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>crossfite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adham">
+    <meta name="description" content="This is a description of the page for Html and Css">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+    <meta name="robot" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis iste architecto quis doloremque deserunt dolor
+        possimus quia quae, laborum fugiat voluptates veniam neque harum consequatur deleniti beatae sunt suscipit vel.
+        Hic doloremque ipsum non, sed nostrum ducimus explicabo iusto fugit quos animi sint dignissimos culpa
+        praesentium sapiente nulla aliquam voluptate quia dolore. Ab nemo est ea non eos fuga modi minima deleniti
+        repudiandae sint, culpa temporibus quisquam facere adipisci nobis inventore unde ad iste, aut saepe quos,
+        doloribus excepturi laudantium amet? Id deserunt neque obcaecati quia culpa? Qui sunt cupiditate minus,
+        nesciunt, quis ratione quas ipsum ut sit blanditiis quasi!</p>
+
+    <i>Lorem, ipsum.</i>
+    <b>Adham</b>
+
+    <div>
+
+    </div>
+
+
+    <h1 id="name">Hello, my name is Adham</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit magnam quidem sunt, provident natus nemo
+        consequatur sequi perferendis enim voluptatem molestias nisi maiores. Dicta deleniti eligendi cupiditate est
+        ullam deserunt, aperiam alias eius fugit.</h2>
+    <div class="layout">
+        <button class="plus">+</button>
+        <div class="number">0</div>
+        <button class="minus">-</button>
+    </div>
+
+    <p>Click the buttons to change the value!</p>
+
+    <script>
+
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        console.log("Hello, my name is Adham");
+        let minus = document.querySelector(".minus");
+        let plus = document.querySelector(".plus");
+        let valueHolder = document.querySelector(".number");
+        let currentValue = parseInt(valueHolder.innerHTML);
+
+        minus.addEventListener("click", (e) => {
+            currentValue--;
+            valueHolder.innerHTML = currentValue;
+        });
+
+        plus.addEventListener("click", (e) => {
+            currentValue++;
+            valueHolder.innerHTML = currentValue;
+        });
+
+    </script>
+</body>
+
+</html>

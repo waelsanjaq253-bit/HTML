@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #dfdfdf;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
