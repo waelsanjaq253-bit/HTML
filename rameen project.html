@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramin Village, Tulkarm, Palestine | Figs, Olive Oil and History</title>
+<meta name="description" content="Ramin is a Palestinian village near Tulkarm in northern Palestine, famous for figs and olive oil, the Ottoman Hejaz Railway tunnel, and its schools and farmland.">
+<meta name="keywords" content="Ramin, Ramin village, Ramin Tulkarm, Palestinian villages, villages of Palestine, Tulkarm villages, Palestine figs, Palestine olive oil, Hejaz Railway tunnel">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ramin Village, Tulkarm, Palestine">
+<meta property="og:description" content="A Palestinian village near Tulkarm known for figs, olive oil and the Hejaz Railway tunnel.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Ramin",
+  "alternateName": "Ramin village",
+  "description": "Ramin is a Palestinian village near Tulkarm in northern Palestine, known for figs, olive oil, the Hejaz Railway tunnel and its farmland.",
+  "containedInPlace": { "@type": "City", "name": "Tulkarm" },
+  "address": { "@type": "PostalAddress", "addressRegion": "Tulkarm", "addressCountry": "PS" },
+  "hasMap": "https://maps.app.goo.gl/osx2pn5yfhkXCAiu6"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fig: #3d2342;
+    --olive: #55672b;
+    --leaf: #dfe6cf;
+    --stone: #f2f3ee;
+    --ink: #22201f;
+    --sun: #e0a526;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--stone);
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+  h1, h2 { font-family: Bitter, Georgia, serif; line-height: 1.15; }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+
+  header.hero {
+    background: var(--fig);
+    color: #fff;
+    padding: 5rem 1.5rem 4rem;
+    text-align: left;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  .hero h1 { font-size: clamp(4rem, 14vw, 9rem); font-weight: 800; letter-spacing: -0.03em; }
+  .hero p { max-width: 36rem; margin-top: 1rem; color: #e6d9e8; font-size: 1.15rem; }
+
+  nav { background: var(--olive); position: sticky; top: 0; z-index: 5; }
+  nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; max-width: 980px; margin: 0 auto; padding: 0.7rem 1.5rem; }
+  nav a { color: #fff; text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+
+  section { padding: 3.5rem 1.5rem; }
+  section:nth-of-type(even) { background: #fff; }
+  h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--fig); margin-bottom: 1.2rem; }
+  p + p { margin-top: 1rem; }
+
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; margin-top: 1.5rem; }
+  .split.flip .text { order: 2; }
+  figure img, .photo { width: 100%; height: 100%; max-height: 380px; object-fit: cover; border-radius: 6px; display: block; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+  figcaption { font-size: 0.95rem; color: #5c5560; margin-top: 0.4rem; }
+
+  /* Season calendar: the real months each crop is harvested */
+  .calendar { margin-top: 2rem; overflow-x: auto; }
+  .months { display: grid; grid-template-columns: 5.5rem repeat(12, minmax(34px, 1fr)); gap: 3px; min-width: 620px; align-items: center; font-size: 0.85rem; }
+  .months .m { text-align: center; font-weight: 600; color: #5c5560; }
+  .months .label { font-weight: 700; }
+  .bar { height: 26px; border-radius: 4px; }
+  .fig-bar { background: var(--fig); grid-column: 3 / 8; }
+  .olive-bar { background: var(--olive); grid-column: 11 / 14; }
+
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+  .fact { border-left: 5px solid var(--olive); padding: 0.4rem 0 0.4rem 1rem; }
+  .fact strong { display: block; font-family: Bitter, Georgia, serif; font-size: 1.15rem; color: var(--fig); }
+
+  .location { background: var(--olive) !important; color: #fff; text-align: center; }
+  .location h2 { color: #fff; }
+  .btn { display: inline-block; margin-top: 1.2rem; background: var(--sun); color: #22201f; padding: 0.8rem 1.6rem; border-radius: 4px; font-weight: 700; text-decoration: none; }
+  .btn:hover { background: #f0b73a; }
+
+  .map { width: 100%; height: 360px; border: 0; border-radius: 6px; margin-top: 1.2rem; display: block; }
+  .img-fail { background: var(--leaf); color: var(--olive); padding: 2rem 1rem; text-align: center; border-radius: 6px; font-weight: 600; }
+  footer { background: var(--fig); color: #cdbdd0; text-align: center; padding: 1.5rem; font-size: 0.95rem; }
+
+  @media (max-width: 720px) {
+    .split, .pair { grid-template-columns: 1fr; }
+    .split.flip .text { order: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Ramin</h1>
+    <p>A village in northern Palestine, near Tulkarm, known for its figs and olive oil.</p>
+  </div>
+</header>
+
+<nav aria-label="Main">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#landmarks">Landmarks</a></li>
+    <li><a href="#farming">Farming</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About Ramin, a village in Palestine</h2>
+    <div class="split">
+      <div class="text">
+        <p>Ramin is a village in northern Palestine that belongs to the city of Tulkarm. It is a link between the cities of Tulkarm and Nablus and the municipalities of Beit Lid and Bazzariya.</p>
+        <p>Many thinkers and scholars came from Ramin and helped Palestine develop. It is also one of the biggest producers of figs and olive oil in Palestine, supplying them across the country. In one season, which lasts about two and a half to three months, Ramin yields more than 360 tons of figs.</p>
+      </div>
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QFeQcVlzWqeeXiXYKqyhfucW2ijCnJMN7IOqZXGi2g&s=10" alt="View of Ramin village">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="landmarks">
+  <div class="wrap">
+    <h2>Landmarks</h2>
+    <div class="split flip">
+      <div class="text">
+        <p>Ramin has many old landmarks from the Ottoman era. One of them is the Hejaz Railway tunnel, which connected the Levant with the Arabian Peninsula. It also linked the cities of Beisan, Jenin, Tulkarm, Haifa, Jaffa and Acre inside Palestine.</p>
+        <p>Work began in the late 19th century under Sultan Abdul Hamid II, supervised by the German engineer Heinrich August Meissner. The railway was officially opened in 1912.</p>
+      </div>
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeQB9HkIwK7ceKiY_iIrOnxlKWxucg8Gozcx00Jpasw&s=10" alt="Hejaz Railway tunnel in Ramin">
+      </figure>
+    </div>
+    <div class="split">
+      <div class="text">
+        <p>Ramin also has a large plain. Residents use its wide area for farming, growing wheat, plums, cherries, figs and olives.</p>
+      </div>
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFQHvJx08AfakHTpdLge5NUlgMQa2S22drmj-4WbJXg&s=10" alt="The large plain of Ramin">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="farming">
+  <div class="wrap">
+    <h2>Farming and harvest seasons</h2>
+    <p>Ramin is famous for growing figs and olives. Most families depend on these two seasons to cover their financial needs for the rest of the year.</p>
+    <p>The fig season runs from April to early August. The olive harvest starts at the beginning of October and lasts until late December.</p>
+
+    <div class="pair">
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTyX9M8hxClixkZ54rV6uIijv_XZJdpGNc5eYAuz3SA&s" alt="Figs">
+        <figcaption>Figs</figcaption>
+      </figure>
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjWxOXL6LDsa99NZ-f7Rb9iT3tU8-unmeLmPmJwa8efXAJzpkpSCiKVs&s=10" alt="Olives">
+        <figcaption>Olives</figcaption>
+      </figure>
+    </div>
+
+    <div class="calendar" role="img" aria-label="Fig season from April to early August; olive harvest from October to December">
+      <div class="months">
+        <span></span>
+        <span class="m">Jan</span><span class="m">Feb</span><span class="m">Mar</span><span class="m">Apr</span><span class="m">May</span><span class="m">Jun</span><span class="m">Jul</span><span class="m">Aug</span><span class="m">Sep</span><span class="m">Oct</span><span class="m">Nov</span><span class="m">Dec</span>
+        <span class="label" style="grid-row: 2;">Figs</span>
+        <span class="bar fig-bar" style="grid-row: 2; grid-column: 5 / 10;"></span>
+        <span class="label" style="grid-row: 3;">Olives</span>
+        <span class="bar olive-bar" style="grid-row: 3; grid-column: 11 / 14;"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="weather">
+  <div class="wrap">
+    <h2>Weather</h2>
+    <div class="facts">
+      <div class="fact"><strong>Summer</strong>Hot, with temperatures reaching the high 30s to low 40s °C.</div>
+      <div class="fact"><strong>Winter</strong>Cold.</div>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="wrap">
+    <h2>Education and services</h2>
+    <p>Ramin is small, with a population of no more than four thousand people, yet it has many educational centers, including three schools. This shows that Ramin is a cultured and important place.</p>
+    <div class="facts">
+      <div class="fact"><strong>Three schools</strong>Serving a population of under 4,000.</div>
+      <div class="fact"><strong>Quran memorization center</strong>For learning and memorizing the Holy Quran.</div>
+      <div class="fact"><strong>Health care center</strong>Primary care for residents.</div>
+      <div class="fact"><strong>Food stores</strong>Grocery shops across the village.</div>
+      <div class="fact"><strong>Greenhouses</strong>Plastic greenhouses that produce vegetables even out of season.</div>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="location">
+  <div class="wrap">
+    <h2>Find Ramin on the map</h2>
+    <p>See the exact location of the village on Google Maps.</p>
+    <iframe class="map" title="Map of Ramin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Ramin%2C%20Tulkarm%2C%20Palestine&z=14&output=embed"></iframe>
+    <a class="btn" href="https://maps.app.goo.gl/osx2pn5yfhkXCAiu6" target="_blank" rel="noopener">Open in Google Maps</a>
+  </div>
+</section>
+
+<footer>Ramin, a Palestinian village in the Tulkarm area, Palestine</footer>
+
+<script>
+  document.querySelectorAll('figure img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var d = document.createElement('div');
+      d.className = 'img-fail';
+      d.textContent = 'Photo unavailable: ' + img.alt;
+      img.replaceWith(d);
+    });
+  });
+</script>
+</body>
+</html>
